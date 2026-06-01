@@ -54,7 +54,12 @@
 
         <div class="input-group">
           <label>Kelas</label>
-          <input type="text" v-model="formData.kelas" placeholder="Contoh: 10 RPL 1" required />
+          <input type="text" v-model="formData.kelas" placeholder="Contoh: 10 atau 11" required />
+        </div>
+
+        <div class="input-group">
+          <label>Jurusan</label>
+          <input type="text" v-model="formData.jurusan" placeholder="Contoh: RPL" required />
         </div>
 
         <div class="input-group">
@@ -94,6 +99,7 @@ const formData = ref({
   nama: '',
   nis: '',
   kelas: '',
+  jurusan: '',
   nomor_telpon: '',
   ekskul_id: ''
 })
@@ -129,6 +135,7 @@ const resetRegistration = () => {
     nama: '',
     nis: '',
     kelas: '',
+    jurusan: '',
     nomor_telpon: '',
     ekskul_id: ''
   }

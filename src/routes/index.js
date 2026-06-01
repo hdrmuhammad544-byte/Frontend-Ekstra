@@ -13,6 +13,7 @@ import StudentDashboard from '../views/students/DashboardView.vue'
 import StudentDaftar from '../views/students/DaftarEkskulView.vue'
 import StudentJadwal from '../views/students/JadwalView.vue'
 import StudentEkskul from '../views/students/EkskulView.vue'
+import StudentProfile from '../views/students/ProfileView.vue'
 
 // ================= LAYOUT =================
 import AdminLayout from '../layout/AdminLayout.vue'
@@ -91,6 +92,12 @@ const routes = [
         path: 'jadwal',
         name: 'student-jadwal',
         component: StudentJadwal
+      },
+
+      {
+        path: 'profile',
+        name: 'student-profile',
+        component: StudentProfile
       }
 
     ]

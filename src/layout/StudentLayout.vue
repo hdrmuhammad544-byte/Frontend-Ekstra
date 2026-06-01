@@ -30,6 +30,11 @@
       <!-- Navbar -->
       <nav class="navbar">
         <h1>Dashboard Siswa</h1>
+        <div class="navbar-actions">
+          <router-link to="/student/profile" class="profile-btn">
+            Profil Siswa
+          </router-link>
+        </div>
       </nav>
 
 
@@ -107,6 +112,23 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-btn {
+  background: #1E3A8A;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.profile-btn:hover {
+  background: #F97316;
 }
 
 /* MAIN */
